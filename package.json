@@ -1,0 +1,16 @@
+{
+    "name": "movies-listing-app",
+    "version": "1.0.0",
+    "private": true,
+    "workspaces": [
+      "frontend",
+      "backend"
+    ],
+    "scripts": {
+      "start": "concurrently \"npm run start --prefix backend\" \"npm run start --prefix frontend\""
+    },
+    "devDependencies": {
+      "concurrently": "^6.0.0"
+    }
+  }
+  
